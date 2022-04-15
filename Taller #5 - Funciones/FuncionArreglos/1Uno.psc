@@ -1,7 +1,4 @@
-Proceso sin_titulo
-	Definir i, vector Como Entero;
-	Dimension vector[5];
-	
+SubProceso arreglo ( i, vector )
 	Escribir "Digite número en la pocisión 1:";
 	Leer vector[0];
 	Escribir "Digite número en la pocisión 2:";
@@ -17,5 +14,13 @@ Proceso sin_titulo
 	Para i<-0 Hasta 4 Con Paso 1 Hacer
 		Escribir "[",i,"]", " = ",vector[i];
 	FinPara
+FinSubProceso
+
+
+Proceso funArreglo
+	Definir i, vector Como Entero;
+	Dimension vector[5];
+	i<-0;
+	arreglo(i,vector);
 	
 FinProceso

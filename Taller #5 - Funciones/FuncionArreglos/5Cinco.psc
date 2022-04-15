@@ -1,7 +1,4 @@
-Proceso sin_titulo
-	Definir f, c, tabla, fu, cu Como Entero;
-	Dimension tabla[11, 11];
-	
+SubProceso tablas ( f, c, tabla, fu, cu )
 	Para f<-1 Hasta 10 Hacer
 		Para c<-1 Hasta 10 Hacer
 			tabla[f, c] <- (f * c);
@@ -21,6 +18,14 @@ Proceso sin_titulo
 	Leer cu;
 	
 	Escribir "El número es: ", tabla[fu,cu];
+FinSubProceso
+
+
+Proceso sin_titulo
+	Definir f, c, tabla, fu, cu Como Entero;
+	Dimension tabla[11, 11];
+	f<-1;c<-1;fu<-1;cu<-1;
 	
-	
+	tablas(f, c, tabla, fu, cu);
+
 FinProceso

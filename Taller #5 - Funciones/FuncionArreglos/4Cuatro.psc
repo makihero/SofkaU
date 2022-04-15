@@ -1,9 +1,4 @@
-Proceso sin_titulo
-	Definir matriz, matriz1, fila, columna, f, c, contador Como Entero;
-	Dimension matriz1[4,5];
-	Dimension matriz[4, 5];
-	contador <- 0;
-	
+SubProceso orden( matriz, matriz1, fila, columna, f, c, contador )
 	matriz[0,0] <- 01;
 	matriz[0,1] <- 02;
 	matriz[0,2] <- 03;
@@ -46,10 +41,15 @@ Proceso sin_titulo
 		FinPara
 		Escribir "";
 	FinPara
-	
+FinSubProceso
 
+
+Proceso funOrden
+	Definir matriz, matriz1, fila, columna, f, c, contador Como Entero;
+	Dimension matriz1[4,5];
+	Dimension matriz[4, 5];
+	contador<-0;f<-0;c<-0;fila<-0;columna<-0;
 	
-	
-	
+	orden(matriz, matriz1, fila, columna, f, c, contador);	
 	
 FinProceso

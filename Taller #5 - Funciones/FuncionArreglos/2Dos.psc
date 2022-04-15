@@ -1,9 +1,4 @@
-Proceso sin_titulo
-	Definir i,j, k, arreglo Como Entero;
-	Dimension arreglo[20];
-	
-	
-	
+SubProceso paresImpares ( i,j, k, arreglo )
 	Para i<-1 Hasta 19 Con Paso 1 Hacer
 		arreglo[i] <- azar(100);
 	FinPara
@@ -26,5 +21,28 @@ Proceso sin_titulo
 			
 		FinSi
 	FinPara
-	Escribir "";	
+	Escribir "";
+FinSubProceso
+
+
+Proceso funParesImpares
+	Definir i,j, k, arreglo Como Entero;
+	Dimension arreglo[20];
+	i<-0;j<-0;k<-0;
+	
+	paresImpares(i,j, k, arreglo);
+
 FinProceso
+
+
+
+
+
+
+
+
+
+
+
+
+
