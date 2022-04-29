@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Ms+Madi&family=Whisper&display=swap');
+
+/*font-family: 'Ms Madi', cursive;*/
+/*font-family: 'Montserrat', sans-serif;*/
+/*font-family: 'Whisper', cursive;*/
+body{
+	background-image: url("img/hoja.png");
+}
+.perfil{
+	position: relative;
+	top: 50px;
+	left: 380px;
+
+
+}
+img{
+	border: 1px solid black;
+	border-radius: 50%;
+	box-shadow: 6px 3px 10px black;
+}
+.titulo{
+	position: relative;
+	top: -200px;
+	left: 600px;
+	color: #1B1B1B;
+
+}
+.subtitulo{
+	position: relative;
+	top: -250px;
+	left: 600px;
+}
+.lista{
+	position: absolute;
+	top: 300px;
+	left:350px;
+	width: 300px;
+	align-items: center;
+	color: #202020;
+
+}
+.lista1{
+	position:absolute;
+	top: 300px;
+	width: 400px;
+	left: 700px;
+	border-left: 3px dotted gray;
+	color: #202020;
+}
+ul{
+	list-style: none;
+	list-style-image: url("../img/flecha.png");
+}
+h1{
+	font-family: 'Whisper', cursive;
+	font-size: 85px;
+	color: #1F1F1F;
+}
+h3{
+	position: relative;
+
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12.2px;
+	color: #1F1F1F;
+
+}
+b{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13.5px;
+
+}
+p{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+}
+.descargar a{
+	position: absolute;
+	top: 50px;
+	right: 100px;
+	background-color: #626262;
+	padding: 8px;
+	text-decoration: none;
+	color: #1F1F1F;
+	border-radius: 10px;
+
+}
+a:hover{
+	color: white;
+	background-color: #B1B1B1;
+	transition: all .8s;
+	cursor: pointer;
+}
+
+
+
