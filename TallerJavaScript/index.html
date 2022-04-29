@@ -1,0 +1,164 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" href="css/estilo2.css">
+		<link rel="stylesheet" href="css/estilo3.css">
+		<link id="estilos" rel="stylesheet" href="css/index.css">
+		<title>Document</title>
+	</head>
+	<body >	
+		<div class="perfil">
+			<img src="img/photo.png" alt="perfil" width="180px"	height="180px">
+		</div>
+		<div class="descargar"><a download="img/download.pdf" href="download.pdf">Download pdf</a></div>
+		<button class="b1" onClick="Mycolor()"></button><br>
+		<button class="b2" onClick="Mycolor2()"></button><br>
+		<button class="b3" onClick="Mycolor3()"></button>
+		<div class="titulo">
+			<h1 id="name">Rubén Callejas</h1>
+		</div>
+		<div class="subtitulo"><h3>SOFTWARE DEVELOPER</h3></div>
+		<div class="lista">
+			<ul>
+				<li>
+					<button class="accordion">Section 1</button>
+					<div class="panel">
+					<b>DATOS PERSONALES</b>
+					<p>
+					   IDENTIDAD           :        1.123.207.791<br>
+	                   NACIMIENTO          :        28 de Marzo de 1989<br>
+	                   TELEFONO            :        3152046924<br>
+	                   CIUDAD              :        Pitalito, Huila<br>
+	                   ESTADO CIVIL        :        Casado<br>
+	                   DIRECCION           :        Vereda Pantanos<br>
+	                   E-MAIL              :        rubencallejast@gmail.com<br>
+					</p>
+					</div>
+				</li>
+				<li>
+					<button class="accordion">Section 2</button>
+					<div class="panel">
+					<b>REFERENCIAS FAMILIARES</b>
+					<p>
+					NOMBRE      :        Raul<br>
+                    APELLIDOS   :        Callejas Triviño<br>
+                    PARENTESCO  :        Hermano<br>
+                    CELULAR     :        3212833077<br>
+				    </p>
+				    <p>
+					NOMBRE      :        Vladimir<br>
+                    APELLIDOS   :        Triviño Silva<br>
+                    PARENTESCO  :        Primo<br>
+                    CELULAR     :        +971509612916<br>
+				    </p>
+					</div>
+				</li>
+				<li>
+					<button class="accordion">Section 3</button>
+					<div class="panel">
+					<b>REFERENCIAS PERSONALES</b>
+					<p>
+					NOMBRE      :        Eval Andres<br>
+                    APELLIDOS   :        Huertas Mora<br>
+                    PARENTESCO  :        amigo<br>
+                    CELULAR     :        3103144185<br>
+				    </p>
+				    <p>
+					NOMBRE      :        Geovanny Arles<br>
+                    APELLIDOS   :        Chacon Torres<br>
+                    PARENTESCO  :        amigo<br>
+                    CELULAR     :        3214492616<br>
+				    </p>
+					</div>
+				  </li>  	
+				</ul>
+			</div>	
+		<div class="lista1">		    
+			<ul>	    
+				<li>
+					<button class="accordion">Section 4</button>    
+			   		<div class="panel">
+			   		<b>ESTUDIOS</b>
+			    	<P>
+			        TITULACION        :        Tecnólogo en Contabilidad<br>
+			        GRADUACION        :        2014<br>
+			        INSTITUCION       :        SENA Centro de Servicios Financieros<br>
+			        CERTIFICADO       :        <a href="sena.png">Certificado</a>
+			    	</P>
+					<p>
+			        TITULACION        :        Diplomado Mision Tic<br>
+			        GRADUACION        :        2022<br>
+			        INSTITUCION       :        Universidad Nacional de Colombia<br>
+			        CERTIFICADO       :        <a href="2022.jpg">Certificado</a>
+			   		</p>
+			   		</div>
+			   	</li>	
+
+		   		<li>
+		   			<button class="accordion" id="caja5">Section 5</button>
+			   		<div class="panel">
+			   		<b>EXPERIENCIA</b>	
+			    	<p>
+			        CARGO          :        AUXILIAR ADMINISTRATIVO<br>
+			        FUNCIONES      :        Gestionar y planear viajes y actividades de recreación en el área de Tiempo libre en Comfamiliar del Huila.<br>
+			        JEFE INMEDIATO :        Dra. Rosa Adela Pardo Motta<br>
+			        TELEFONO       :        310218954
+					</p>
+					<p>
+			       	CARGO          :        AUXILIAR APOYO EN EL AREA DE APORTES Y SUBSIDIO<br>
+			       	FUNCIONES      :        Ingresar y generar certificaciones y demás funciones de afiliaciones y subsidios de todos los afiliados a la Caja de Compensación Familiar del Putumayo.<br>
+			       	JEFE INMEDIATO :        Dra. Adriana Mailen Enríquez López<br>
+			        TELEFONO       :        4227137</a>
+					</p>
+					<p>
+			        CARGO          :        COORDINADOR CENTRO RECREACIONAL COMFAMILIAR<br>
+			        FUNCIONES      :        Coordinar las labores y el personal de todo el centro recreacional<br>
+			        JEFE INMEDIATO :        Dra. Dennys del Rocío Flórez<br>
+			        TELEFONO       :        4227137
+			 		</p>
+			 		<p>
+			        CARGO          :        Auxiliar Tesorería<br>
+			        FUNCIONES      :        Generar cheques, estudio de las cuentas de los funcionarios para respectivos pagos, atención al cliente realizando el respectivo recaudo entre otras funciones.<br>
+			        JEFE INMEDIATO :        : Dra. Patricia Burbano Córdoba, Directora Administrativa y Financiera<br>
+			        TELEFONO       :        4227137
+			        </p>
+			    	</div>
+				</li>
+			    </ul>
+		</div>
+
+			<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+			  acc[i].addEventListener("click", function() {
+			    this.classList.toggle("active");
+
+			    var panel = this.nextElementSibling;
+			    if (panel.style.display === "block") {
+			      panel.style.display = "none";
+			    } else {
+			      panel.style.display = "block";
+			    }
+			  });
+			}
+
+			function Mycolor() {
+				document.getElementById("estilos").href = "css/estilo2.css"		
+			}
+			function Mycolor2() {
+				document.getElementById("estilos").href = "css/index.css"		
+			}
+			function Mycolor3() {
+				document.getElementById("estilos").href = "css/estilo3.css"		
+			}
+
+
+			</script>
+		
+	</body>
+	</html>

@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Ms+Madi&family=Whisper&display=swap');
+
+/*font-family: 'Ms Madi', cursive;*/
+/*font-family: 'Montserrat', sans-serif;*/
+/*font-family: 'Whisper', cursive;*/
+body{
+    background-color: #202020;
+}
+
+.perfil{
+	position: relative;
+	top: 50px;
+	left: 380px;
+
+
+}
+img{
+	border: 1px solid black;
+	border-radius: 50%;
+	box-shadow: 6px 3px 10px black;
+}
+.titulo{
+	position: relative;
+	top: -200px;
+	left: 600px;
+	color: #1B1B1B;
+
+}
+.subtitulo{
+	position: relative;
+	top: -250px;
+	left: 600px;
+}
+.lista{
+	position: absolute;
+	top: 300px;
+	left:350px;
+	width: 300px;
+	align-items: center;
+	color: #ec6f09;
+
+}
+.lista1{
+	position:absolute;
+	top: 300px;
+	width: 400px;
+	left: 700px;
+	border-left: 3px dotted gray;
+	color: #ec6f09;
+}
+ul{
+	list-style: none;
+	list-style-image: url("../img/flecha.png");
+}
+h1{
+	font-family: 'Whisper', cursive;
+	font-size: 85px;
+    color: #ec6f09;
+}
+h3{
+	position: relative;
+
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12.2px;
+    color: #ec6f09;
+
+}
+b{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13.5px;
+
+}
+p{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+}
+.descargar a{
+	position: absolute;
+	top: 50px;
+	right: 100px;
+	background-color: #626262;
+	padding: 8px;
+	text-decoration: none;
+	color: #1F1F1F;
+	border-radius: 10px;
+	box-shadow: 6px 3px 10px black;
+
+}
+a:hover{
+	color: white;
+	background-color: #B1B1B1;
+	transition: all .8s;
+}
+
+.accordion{
+	background-color: #ec6f09;
+	color: #444;
+	cursor: pointer;
+	padding: 12px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+}
+.active, .accordion:hover{
+	background-color: #ccc;
+}
+.panel{
+	padding: 0 12px;
+	background-color: #202020;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.accordion:after{
+	content: '\02795';
+	font-size: 13px;
+	color: white;
+	float: right;
+}
+.active:after{
+	content: "\2796";
+}
+.b1{
+	width: 20px;
+	height: 20px;
+	border: none;
+	border-radius: 50%;
+	background-color: #ec6f09;
+	cursor: pointer;
+}
+.b2{
+	width: 20px;
+	height: 20px;
+	border: none;
+	border-radius: 50%;
+	background-color: #928f8f;
+	cursor: pointer;
+}
+.b3{
+	width: 20px;
+	height: 20px;
+	border: none;
+	border-radius: 50%;
+	background-color: #690000;
+	cursor: pointer;
+}
