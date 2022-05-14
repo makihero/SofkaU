@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="contact_form">
+        <div class="formulario">
+            <h1>Formulario de Contacto</h1>
+            <form action="" method="post" enctype="text/plain">
+                
+                <p>
+                    <label for="nombre" class="colocar_nombre">Nombre <span class="oblogatorio">*</span></label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribir nombre">
+                </p>
+
+                <p>
+                    <label for="email" class="colocar_email" >Email <span class="oblogatorio">*</span></label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribir e-mail">  
+                </p>
+
+                <p>
+                    <label for="asunto" class="colocar_asunto">Asunto <span class="oblogatorio">*</span></label>
+                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribir asunto">
+                </p>
+
+                <p>
+                    <label for="mensaje" class="colocar_mensaje">Mensaje <span class="oblogatorio">*</span></label>
+                    <textarea name="introducir_mensaje" id="mensaje" required="obligatorio" placeholder="Escribir mensaje"></textarea>
+                </p>
+
+                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+                <input class="reset" type="reset" value="Resetear">
+
+                <p class="aviso">
+                    <span class="obligatorio">*</span> los campos son obligatorios.
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

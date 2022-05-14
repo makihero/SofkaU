@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="estilo" rel="stylesheet" href="index.css">
+    <title>Frutas</title>
+</head>
+<body>
+    <h1>clic sobre un <span>botón</span> par o impar</h1>
+    <div>
+    <ol class="lista">
+        <li><button onclick="listImpar()">Manzana</button></li>
+        <li><button onclick="listPar()">Pera</button></li>
+        <li><button onclick="listImpar()">Mango</button></li>
+        <li><button onclick="listPar()">Uva</button></li>
+        <li><button onclick="listImpar()">Mandarina</button></li>
+        <li><button onclick="listPar()">Naranja</button></li>
+        <li><button onclick="listImpar()">Fresa</button></li>
+        <li><button onclick="listPar()">Cereza</button></li>
+        <li><button onclick="listImpar()">Melon</button></li>
+        <li><button onclick="listPar()">Banano</button></li>
+    </ol>
+    </div>
+    <script>
+        function listPar(){
+            document.body.style.backgroundImage= "url(fondoPar.jpg)";
+            document.body.style.backgroundRepeat=("no-repeat")
+            document.body.style.backgroundSize=("cover")
+        }
+        function listImpar() {
+            document.body.style.backgroundImage= "url(fondoImpar.jpg)";
+            document.body.style.backgroundRepeat=("no-repeat")
+            document.body.style.backgroundSize=("cover")
+        }
+        
+
+    </script>
+
+</body>
+</html>
