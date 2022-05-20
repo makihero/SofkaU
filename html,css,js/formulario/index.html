@@ -32,7 +32,7 @@
                     <textarea name="introducir_mensaje" id="mensaje" placeholder="Escribir mensaje"></textarea>
                 </p>
 
-                <button type="submit" name="enviar_formulario" id="enviar" onclick="alerta()"><p>Enviar</p></button>
+                <button type="button" name="enviar_formulario" id="enviar" onclick="alerta()"><p>Enviar</p></button>
                 <input class="reset" type="reset" value="Resetear">
 
                 <p class="aviso">
@@ -52,6 +52,10 @@
             }else{
                 alert("Información enviada")
             }
+            console.log("nombre: "+nombre);
+            console.log("email: "+email);
+            console.log("asunto: "+assunto);
+            console.log("mensaje: "+mensaje);
         }
     </script>
 
