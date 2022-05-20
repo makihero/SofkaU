@@ -14,25 +14,25 @@
                 
                 <p>
                     <label for="nombre" class="colocar_nombre">Nombre <span class="oblogatorio">*</span></label>
-                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribir nombre">
+                    <input type="text" name="introducir_nombre" id="nombre" placeholder="Escribir nombre">
                 </p>
 
                 <p>
                     <label for="email" class="colocar_email" >Email <span class="oblogatorio">*</span></label>
-                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribir e-mail">  
+                    <input type="email" name="introducir_email" id="email" placeholder="Escribir e-mail">  
                 </p>
 
                 <p>
                     <label for="asunto" class="colocar_asunto">Asunto <span class="oblogatorio">*</span></label>
-                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribir asunto">
+                    <input type="text" name="introducir_asunto" id="assunto" placeholder="Escribir asunto">
                 </p>
 
                 <p>
                     <label for="mensaje" class="colocar_mensaje">Mensaje <span class="oblogatorio">*</span></label>
-                    <textarea name="introducir_mensaje" id="mensaje" required="obligatorio" placeholder="Escribir mensaje"></textarea>
+                    <textarea name="introducir_mensaje" id="mensaje" placeholder="Escribir mensaje"></textarea>
                 </p>
 
-                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+                <button type="submit" name="enviar_formulario" id="enviar" onclick="alerta()"><p>Enviar</p></button>
                 <input class="reset" type="reset" value="Resetear">
 
                 <p class="aviso">
@@ -41,5 +41,19 @@
             </form>
         </div>
     </div>
+    <script>
+        function alerta() {
+            var nombre = document.getElementById("nombre").value;
+            var email = document.getElementById("email").value;
+            var assunto = document.getElementById("assunto").value;
+            var mensaje = document.getElementById("mensaje").value;
+            if (nombre == ""||email == ""||assunto == ""||mensaje =="") {
+                alert("Por favor, completar todos los campos");
+            }else{
+                alert("Información enviada")
+            }
+        }
+    </script>
+
 </body>
 </html>
