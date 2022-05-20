@@ -9,18 +9,20 @@
 </head>
 <body>
     <h1>clic sobre un <span>botón</span> par o impar</h1>
+    <button onclick="listPar()">PAR</button>
+    <button onclick="listImpar()">IMPAR</button>
     <div>
     <ol class="lista">
-        <li><button onclick="listImpar()">Manzana</button></li>
-        <li><button onclick="listPar()">Pera</button></li>
-        <li><button onclick="listImpar()">Mango</button></li>
-        <li><button onclick="listPar()">Uva</button></li>
-        <li><button onclick="listImpar()">Mandarina</button></li>
-        <li><button onclick="listPar()">Naranja</button></li>
-        <li><button onclick="listImpar()">Fresa</button></li>
-        <li><button onclick="listPar()">Cereza</button></li>
-        <li><button onclick="listImpar()">Melon</button></li>
-        <li><button onclick="listPar()">Banano</button></li>
+        <li><button id="impar">Manzana</button></li>
+        <li><button id="par">Pera</button></li>
+        <li><button id="impar0">Mango</button></li>
+        <li><button id="par0">Uva</button></li>
+        <li><button id="impar1">Mandarina</button></li>
+        <li><button id="par1">Naranja</button></li>
+        <li><button id="impar2">Fresa</button></li>
+        <li><button id="par2">Cereza</button></li>
+        <li><button id="impar3">Melon</button></li>
+        <li><button id="par3">Banano</button></li>
     </ol>
     </div>
     <script>
@@ -28,11 +30,21 @@
             document.body.style.backgroundImage= "url(fondoPar.jpg)";
             document.body.style.backgroundRepeat=("no-repeat")
             document.body.style.backgroundSize=("cover")
+            document.getElementById("par").style.background="blue";
+            document.getElementById("par0").style.background="blue";
+            document.getElementById("par1").style.background="blue";
+            document.getElementById("par2").style.background="blue";
+            document.getElementById("par3").style.background="blue";
         }
         function listImpar() {
             document.body.style.backgroundImage= "url(fondoImpar.jpg)";
             document.body.style.backgroundRepeat=("no-repeat")
             document.body.style.backgroundSize=("cover")
+            document.getElementById("impar").style.background="red"
+            document.getElementById("impar0").style.background="red"
+            document.getElementById("impar1").style.background="red"
+            document.getElementById("impar2").style.background="red"
+            document.getElementById("impar3").style.background="red"
         }
         
 
